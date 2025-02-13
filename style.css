@@ -1,0 +1,173 @@
+:root{
+    --charcoal: #333;
+    --off-white: #f9f9f9;
+    --lightBlue: rgb(92, 202, 250);
+}
+html {
+    scroll-padding-top: 115px;
+}
+
+body {
+    gap: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--charcoal);
+    margin: 0;
+    background-color: var(--off-white);
+    bottom: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+section {
+    margin-top: 115px;
+    margin-left: 180px;
+    margin-bottom: 5px;
+}
+
+header {
+    display: flex;
+    box-sizing: border-box;
+    padding-right: 20px;
+    align-items: center;
+    background-color: var(--charcoal);
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(90deg,  var(--lightBlue), rgb(22, 10, 159));
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+header img {
+    margin-left: 40px;
+    width:100px;
+    box-shadow: none;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-left: 180px;
+    bottom: 0;
+}
+footer a:hover {
+    text-decoration: none;
+}
+article {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+summary {
+    margin: 0 auto;
+    background-color: var(--lightBlue);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    top: 0;
+    text-align: center;
+    color: var(--charcoal);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: larger;
+    line-height: 1;
+    color: #333;
+    margin-top: 30px;
+    text-decoration: underline var(--lightBlue);
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* in combination with display block, this centers image */
+    max-width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 5px lightgray;
+}
+
+a:link, a:visited {
+    text-decoration: none; /* remove default underline */
+    color: inherit; /* inherits color of surrounding text instead of default blue */
+}
+
+a:hover, a:active {
+    color: var(--lightBlue);
+    text-decoration: underline black;
+}
+
+input[type="submit"] {
+    background-color: var(--charcoal); 
+    margin: 5px;
+    color: white;           
+    border: none;           
+    padding: 8px 15px;     
+}
+
+input[type="submit"]:hover {
+    background-color: var(--lightBlue); 
+    color: var(--charcoal);
+    transform: scale(1.05);    
+}
+nav ul {
+    display: grid;
+    grid-template-rows: repeat(7, minmax(auto, 1fr)); /* Ensures rows have a min height */
+    top: 100px; /* Stick under the header */
+    bottom: 0;
+    width: 180px;
+    position: fixed; 
+    overflow: scroll; 
+    scrollbar-width: none; /* hide the scroll bar while still allowing scroll */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style-type: none;
+    background-color: var(--charcoal); 
+    color: white;
+    border: 1px solid #555;
+}
+
+nav li {
+    display: flex; /* Flexbox container */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    background-color: var(--charcoal);
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    margin: 5px;
+    margin-left: 15px;
+    padding: 8px 0; /* Add padding on top and bottom to ensure equal space */
+    box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px; /* Increase padding to make the clickable area larger */
+}
+
+nav li a:hover {
+    background-color: rgba(51, 51, 51, 0.5); /* Transparent background on hover */
+    text-decoration: none;
+}
