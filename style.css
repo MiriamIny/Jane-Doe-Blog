@@ -177,3 +177,14 @@ nav li a:hover {
     background-color: rgba(51, 51, 51, 0.5); /* Transparent background on hover */
     text-decoration: none;
 }
+@keyframes bounceIn {
+    from {width:25%;}
+    to {width:50%;}
+}
+.animated{
+   animation-name: bounceIn; 
+   animation-iteration-count: 1;
+   animation-play-state: running;
+   animation-duration: 2s;
+}
+

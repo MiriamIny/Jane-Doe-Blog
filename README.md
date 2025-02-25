@@ -3,7 +3,7 @@
 
 CIS 365 - Web Programming
 
-Proffessor T. Lachman
+Professor T. Lachman
 
 Miriam Iny
 
